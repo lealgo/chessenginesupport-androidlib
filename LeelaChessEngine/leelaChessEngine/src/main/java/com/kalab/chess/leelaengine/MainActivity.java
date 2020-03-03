@@ -1,4 +1,4 @@
-package com.kalab.chess.stockfishengine;
+package com.kalab.chess.leelaengine;
 
 import android.app.Activity;
 import android.os.Bundle;

@@ -1,2 +1,2 @@
 include ':chessEngineSupportLibrary'
-include ':stockfishChessEngine'
+include ':leelaChessEngine'

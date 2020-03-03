@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.kalab.chess.stockfishengine"
+        applicationId "com.kalab.chess.leelaengine"
         minSdkVersion 14
         targetSdkVersion 28
     }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kalab.chess.stockfishengine"
+    package="com.kalab.chess.leelaengine"
     android:versionCode="1"
-    android:versionName="10" >
+    android:versionName="0.22" >
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="Stockfish Chess Engine"
+        android:label="Leela Chess Zero Chess Engine"
         android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         <activity
-            android:name="com.kalab.chess.stockfishengine.MainActivity"
-            android:label="Stockfish Chess Engine" >
+            android:name="com.kalab.chess.leelaengine.MainActivity"
+            android:label="Leela Chess Zero Engine" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,12 +23,12 @@
 
             <meta-data
                 android:name="chess.provider.engine.authority"
-                android:value="com.kalab.chess.stockfishengine.StockfishEngineProvider" />
+                android:value="com.kalab.chess.leelaengine.LeelaEngineProvider" />
         </activity>
 
         <provider
-            android:name="com.kalab.chess.stockfishengine.StockfishEngineProvider"
-            android:authorities="com.kalab.chess.stockfishengine.StockfishEngineProvider"
+            android:name="com.kalab.chess.leelaengine.LeelaEngineProvider"
+            android:authorities="com.kalab.chess.leelaengine.LeelaEngineProvider"
             android:exported="true" />
     </application>
 

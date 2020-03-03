@@ -1,6 +1,6 @@
-# Example Stockfish engine app #
+# Example engine app #
 
-This example app provides the Stockfish Chess engine to other Android apps.
+This example app provides a Chess engine to other Android apps.
 
 # How to provide a chess engine using the chess engine support library #
 
