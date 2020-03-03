@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<enginelist>
+
+    <engine
+        name="Leela Chess Zero"
+        filename="liblc0.so"
+        target="armeabi-v7a|arm64-v8a" />
+
+</enginelist>
