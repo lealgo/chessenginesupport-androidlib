@@ -2,7 +2,6 @@ package com.kalab.chess.leelaengine;
 
 import com.kalab.chess.enginesupport.ChessEngineProvider;
 
-import android.content.res.AssetManager;
 import android.os.ParcelFileDescriptor;
 
 import java.io.File;
@@ -30,7 +29,7 @@ public class LeelaEngineProvider extends ChessEngineProvider {
                 pipe(engine, os);
 
                 // Add weights
-                InputStream weights = getContext().getAssets().open("networks/embed.zip");
+                InputStream weights = getContext().getAssets().open("networks/embed.bin");
                 pipe(weights, os);
 
                 // Close and return temp file
