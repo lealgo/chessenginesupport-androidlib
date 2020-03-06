@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="Leela Chess Zero Chess Engine"
+        android:label="Leela Chess Zero Engine"
         android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         <activity
             android:name="com.kalab.chess.leelaengine.MainActivity"
