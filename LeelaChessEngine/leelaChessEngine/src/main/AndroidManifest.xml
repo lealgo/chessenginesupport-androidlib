@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kalab.chess.leelaengine"
     android:versionCode="1"
-    android:versionName="0.25dev" >
+    android:versionName="0.22" >
 
     <application
         android:allowBackup="true"
