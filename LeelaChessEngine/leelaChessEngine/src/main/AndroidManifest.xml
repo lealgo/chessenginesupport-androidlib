@@ -2,20 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kalab.chess.leelaengine"
     android:versionCode="1"
-    android:versionName="0.22" >
-
+    android:versionName="0.25dev">
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="Leela Chess Zero Engine"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
         <activity
             android:name="com.kalab.chess.leelaengine.MainActivity"
-            android:label="Leela Chess Zero Engine" >
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateUnchanged|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
                 <action android:name="intent.chess.provider.ENGINE" />

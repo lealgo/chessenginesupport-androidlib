@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Leela Chess Zero Engine</string>
+    <string name="network_weights">591226</string>
+    <string name="includes_the_following_engines">This package provides the Leela Chess Zero engine.</string>
+    <string name="to_use_them">To use it, you need a chess application compatible with the Open Exchange protocol.</string>
+    <string name="released_under">is released under the terms of the GNU General Public License v3</string>
+    <string name="build">Build</string>
+    <string name="source_code">https://github.com/LeelaChessZero/lc0</string>
+</resources>
