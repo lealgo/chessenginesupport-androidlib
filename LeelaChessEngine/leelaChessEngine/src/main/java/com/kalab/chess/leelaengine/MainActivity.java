@@ -29,9 +29,8 @@ public class MainActivity extends Activity {
 
 			ImageView icon = new ImageView(context);
 			icon.setImageResource(R.drawable.ic_launcher);
-
+			int iconSize = getRawPixels(48f);
 			LayoutParams iconParams = LinearLayoutParams();
-			int iconSize =  getRawPixels(48f);
 			iconParams.width = iconSize;
 			iconParams.height = iconSize;
 			iconParams.gravity = Gravity.CENTER_VERTICAL;
@@ -68,7 +67,7 @@ public class MainActivity extends Activity {
 
 		LinearLayout layout = new LinearLayout(this);
 		layout.setOrientation(LinearLayout.VERTICAL);
-		int spacing = getRawPixels(16f);
+		int spacing = getRawPixels(12f);
 		layout.setPadding(spacing, spacing, spacing, spacing);
 
 		HeaderView header = new HeaderView(this);
@@ -83,8 +82,8 @@ public class MainActivity extends Activity {
 		label.setText(getLabel());
 		LinearLayout.LayoutParams labelParams = LinearLayoutParams();
 		labelParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
-		labelParams.height = 0;
 		labelParams.weight = 1.0f;
+		labelParams.topMargin = spacing;
 		layout.addView(label, labelParams);
 
 		setContentView(layout);
