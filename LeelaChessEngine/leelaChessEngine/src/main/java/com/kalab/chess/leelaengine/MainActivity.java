@@ -105,40 +105,25 @@ public class MainActivity extends Activity {
 	private CharSequence getLabel()  {
 		SpannableStringBuilder b = new SpannableStringBuilder();
 
-		b.append(getText(R.string.includes_the_following_engines));
-		b.append("\n\n");
+		appendLine(b, getText(R.string.includes_the_following_engines));
 
 		appendDetail(b, "Chess Engine Version", getVersionName());
-		b.append("\n\n");
 
 		appendDetail(b, "Network Weights File", getNetworkWeights());
-		b.append("\n\n");
 
-		b.append(getText(R.string.to_use_them));
-		b.append("\n\n");
+		appendLine(b, getText(R.string.to_use_them));
 
-		b.append(getText(R.string.app_name));
-		b.append(" ");
-		b.append(getText(R.string.released_under));
-
-		b.append(" (");
-
-		int downloadLinkStart = b.length();
-
-		b.append("source code");
-		b.setSpan(new ClickableSpan() {
-			@Override
-			public void onClick(View widget) {
-				launchUri(getText(R.string.source_code));
-			}
-		}, downloadLinkStart, b.length(), 0);
-
-		b.append(").");
+		appendLink(b, getText(R.string.released_under), getText(R.string.source_code));
 
 		return b;
 	}
 
-	private void appendDetail(SpannableStringBuilder b, String title, String subtitle) {
+	private static void appendLine(SpannableStringBuilder b, CharSequence line) {
+		b.append(line);
+		b.append("\n\n");
+	}
+
+	private static void appendDetail(SpannableStringBuilder b, String title, String subtitle) {
 		b.append("    ");
 
 		int nameStart = b.length();
@@ -152,6 +137,25 @@ public class MainActivity extends Activity {
 
 		b.setSpan(new RelativeSizeSpan(0.8f), subtitleStart, b.length(), 0);
 		b.setSpan(new ForegroundColorSpan(0xff808080), subtitleStart, b.length(), 0);
+
+		b.append("\n\n");
+	}
+
+	private void appendLink(SpannableStringBuilder b, CharSequence line, final CharSequence link) {
+		b.append(line);
+		b.append(" (");
+
+		int downloadLinkStart = b.length();
+
+		b.append("source code");
+		b.setSpan(new ClickableSpan() {
+			@Override
+			public void onClick(View widget) {
+				launchUri(link);
+			}
+		}, downloadLinkStart, b.length(), 0);
+
+		b.append(").");
 	}
 
 	void launchUri(CharSequence uri) {
