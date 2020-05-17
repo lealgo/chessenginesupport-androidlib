@@ -4,6 +4,6 @@
     <engine
         name="Leela Chess Zero"
         filename="liblc0.so"
-        target="armeabi-v7a|arm64-v8a" />
+        target="armeabi-v7a|arm64-v8a|x86" />
 
 </enginelist>

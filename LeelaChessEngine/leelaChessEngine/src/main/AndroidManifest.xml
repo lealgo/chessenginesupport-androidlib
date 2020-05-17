@@ -3,6 +3,7 @@
     package="com.kalab.chess.leelaengine"
     android:versionCode="1"
     android:versionName="0.25dev">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
